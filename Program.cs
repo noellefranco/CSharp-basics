@@ -4,10 +4,8 @@ using MvcMovie.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Mudei aqui as 23:56 - ultima att nesse arquivo
 builder.Services.AddDbContext<MvcMovieContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("MvcMovieContext")));
-// fim da mudança
 
 if (builder.Environment.IsDevelopment()) {
     builder.Services.AddDbContext<MvcMovieContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("MvcMovieContext")));

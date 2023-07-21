@@ -20,7 +20,6 @@ namespace MvcMovie.Controllers
         }
 
         // GET: Movies
-        // mudei aqui add string searchString no parâmetro da index
         public async Task<IActionResult> Index
         (string searchString)
         {
